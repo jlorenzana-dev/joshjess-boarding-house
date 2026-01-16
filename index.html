@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JOSHJESS Boarding House</title>
+  <meta name="description"
+    content="JOSHJESS Boarding House offers affordable, safe, and comfortable accommodations for students and working individuals in Daraga, Albay. Monthly rates starting at ₱1,500.">
+  <meta name="keywords" content="boarding house, Daraga, Albay, affordable accommodation, student housing">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <!-- Header -->
+  <header id="header" class="header">
+    <div class="container">
+      <nav class="nav">
+        <a href="#home" class="logo">JOSHJESS</a>
+
+        <div class="nav-desktop">
+          <ul class="nav-links">
+            <li><a href="#home" class="nav-link active">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#rooms" class="nav-link">Rooms</a></li>
+            <li><a href="#rules" class="nav-link">Rules</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+          </ul>
+          <button id="theme-toggle-desktop" class="theme-toggle" aria-label="Toggle dark mode">
+            <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+              fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="4" />
+              <path d="M12 2v2" />
+              <path d="M12 20v2" />
+              <path d="m4.93 4.93 1.41 1.41" />
+              <path d="m17.66 17.66 1.41 1.41" />
+              <path d="M2 12h2" />
+              <path d="M20 12h2" />
+              <path d="m6.34 17.66-1.41 1.41" />
+              <path d="m19.07 4.93-1.41 1.41" />
+            </svg>
+            <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+              fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" />
+            </svg>
+          </button>
+        </div>
+
+        <div class="nav-mobile-buttons">
+          <button id="theme-toggle-mobile" class="theme-toggle" aria-label="Toggle dark mode">
+            <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+              fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="4" />
+              <path d="M12 2v2" />
+              <path d="M12 20v2" />
+              <path d="m4.93 4.93 1.41 1.41" />
+              <path d="m17.66 17.66 1.41 1.41" />
+              <path d="M2 12h2" />
+              <path d="M20 12h2" />
+              <path d="m6.34 17.66-1.41 1.41" />
+              <path d="m19.07 4.93-1.41 1.41" />
+            </svg>
+            <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+              fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" />
+            </svg>
+          </button>
+          <button id="menu-toggle" class="menu-toggle" aria-label="Toggle menu">
+            <svg class="icon-menu" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+              fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="4" x2="20" y1="12" y2="12" />
+              <line x1="4" x2="20" y1="6" y2="6" />
+              <line x1="4" x2="20" y1="18" y2="18" />
+            </svg>
+            <svg class="icon-close" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+              fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M18 6 6 18" />
+              <path d="m6 6 12 12" />
+            </svg>
+          </button>
+        </div>
+      </nav>
+
+      <div id="mobile-menu" class="mobile-menu">
+        <ul class="mobile-nav-links">
+          <li><a href="#home" class="mobile-nav-link active">Home</a></li>
+          <li><a href="#about" class="mobile-nav-link">About</a></li>
+          <li><a href="#rooms" class="mobile-nav-link">Rooms</a></li>
+          <li><a href="#rules" class="mobile-nav-link">Rules</a></li>
+          <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="hero-subtitle animate-fade-in">Welcome to</p>
+      <h1 class="hero-title animate-fade-in-delay-1">JOSHJESS Boarding House</h1>
+      <p class="hero-description animate-fade-in-delay-2">A safe and comfortable place to stay</p>
+      <a href="#contact" class="btn-hero animate-fade-in-delay-3">Contact Us</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-content">
+          <span class="section-label">About Us</span>
+          <h2 class="section-title">Your Home Away From Home</h2>
+          <p class="about-text">
+            JOSHJESS Boarding House offers affordable, safe, and comfortable accommodations
+            for students and working individuals, providing a peaceful and well-maintained
+            living environment in the heart of Daraga, Albay.
+          </p>
+          <div class="features-grid">
+            <div class="feature-item">
+              <div class="feature-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path
+                    d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z" />
+                  <path d="m9 12 2 2 4-4" />
+                </svg>
+              </div>
+              <div>
+                <h3 class="feature-title">Safe & Secure</h3>
+                <p class="feature-description">24/7 security and peaceful neighborhood</p>
+              </div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8" />
+                  <path
+                    d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+                </svg>
+              </div>
+              <div>
+                <h3 class="feature-title">Comfortable</h3>
+                <p class="feature-description">Well-maintained rooms with amenities</p>
+              </div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path
+                    d="M19 7V4a1 1 0 0 0-1-1H5a2 2 0 0 0 0 4h15a1 1 0 0 1 1 1v4h-3a2 2 0 0 0 0 4h3a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1" />
+                  <path d="M3 5v14a2 2 0 0 0 2 2h15a1 1 0 0 0 1-1v-4" />
+                </svg>
+              </div>
+              <div>
+                <h3 class="feature-title">Affordable</h3>
+                <p class="feature-description">Budget-friendly rates for everyone</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about-image-container">
+          <img src="about.jpg" alt="Boarding house interior" class="about-image">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Rooms Section -->
+  <section id="rooms" class="section rooms">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Accommodations</span>
+        <h2 class="section-title">Rooms & Rates</h2>
+        <p class="section-description">Choose the perfect accommodation that fits your needs and budget</p>
+      </div>
+
+      <div class="rooms-grid">
+        <div class="room-card">
+          <div class="room-image-container">
+            <img src="room.jpg" alt="Shared Room" class="room-image">
+            <span class="room-badge">Most Popular</span>
+          </div>
+          <div class="room-content">
+            <h3 class="room-title">Shared Room</h3>
+            <p class="room-description">Perfect for students and professionals looking for affordable accommodation</p>
+            <ul class="room-amenities">
+              <li class="amenity">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M2 4v16" />
+                  <path d="M2 8h18a2 2 0 0 1 2 2v10" />
+                  <path d="M2 17h20" />
+                  <path d="M6 8v9" />
+                </svg>
+                6 Beds per room
+              </li>
+              <li class="amenity">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path
+                    d="M9 6 6.5 3.5a1.5 1.5 0 0 0-1-.5C4.683 3 4 3.683 4 4.5V17a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-5" />
+                  <line x1="10" x2="8" y1="5" y2="7" />
+                  <line x1="2" x2="22" y1="12" y2="12" />
+                  <line x1="7" x2="7" y1="19" y2="21" />
+                  <line x1="17" x2="17" y1="19" y2="21" />
+                </svg>
+                Private Comfort Room
+              </li>
+              <li class="amenity">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path
+                    d="M3 14h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-7a9 9 0 0 1 18 0v7a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3" />
+                </svg>
+                Kitchen Access
+              </li>
+            </ul>
+            <div class="room-price">
+              <span class="price-amount">₱1,500</span>
+              <span class="price-period">/ month per person</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="room-card featured">
+          <div class="room-image-container">
+            <img src="room1.jpg" alt="Solo Occupancy" class="room-image">
+            <span class="room-badge premium">Premium</span>
+          </div>
+          <div class="room-content">
+            <h3 class="room-title">Solo Occupancy</h3>
+            <p class="room-description">Enjoy complete privacy with exclusive access to the entire room</p>
+            <ul class="room-amenities">
+              <li class="amenity">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M2 4v16" />
+                  <path d="M2 8h18a2 2 0 0 1 2 2v10" />
+                  <path d="M2 17h20" />
+                  <path d="M6 8v9" />
+                </svg>
+                Entire room for yourself
+              </li>
+              <li class="amenity">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path
+                    d="M9 6 6.5 3.5a1.5 1.5 0 0 0-1-.5C4.683 3 4 3.683 4 4.5V17a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-5" />
+                  <line x1="10" x2="8" y1="5" y2="7" />
+                  <line x1="2" x2="22" y1="12" y2="12" />
+                  <line x1="7" x2="7" y1="19" y2="21" />
+                  <line x1="17" x2="17" y1="19" y2="21" />
+                </svg>
+                Private Comfort Room
+              </li>
+              <li class="amenity">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path
+                    d="M3 14h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-7a9 9 0 0 1 18 0v7a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3" />
+                </svg>
+                Private Kitchen
+              </li>
+              <li class="amenity">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10" />
+                  <polyline points="12 6 12 12 16 14" />
+                </svg>
+                Maximum Privacy
+              </li>
+            </ul>
+            <div class="room-price">
+              <span class="price-amount">₱9,000</span>
+              <span class="price-period">/ month</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="rooms-info">
+        <div class="info-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10" />
+            <path d="M12 16v-4" />
+            <path d="M12 8h.01" />
+          </svg>
+        </div>
+        <p>We have 2 rooms available. Each room includes 6 beds, a private comfort room, and kitchen access.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Rules Section -->
+  <section id="rules" class="section rules">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Guidelines</span>
+        <h2 class="section-title">House Rules</h2>
+        <p class="section-description">Please follow these rules to ensure a peaceful living environment for everyone
+        </p>
+      </div>
+
+      <div class="rules-grid">
+        <div class="rule-card">
+          <div class="rule-icon quiet">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10" />
+              <polyline points="12 6 12 12 16 14" />
+            </svg>
+          </div>
+          <h3 class="rule-title">Quiet Hours</h3>
+          <p class="rule-description">No loud noise after 10:00 PM to ensure peaceful rest for all tenants</p>
+        </div>
+
+        <div class="rule-card">
+          <div class="rule-icon clean">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M3 22v-6M3 16V4a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v8" />
+              <path d="M3 16h6l3-3 3 3h6" />
+            </svg>
+          </div>
+          <h3 class="rule-title">Cleanliness</h3>
+          <p class="rule-description">Keep rooms and common areas clean at all times</p>
+        </div>
+
+        <div class="rule-card">
+          <div class="rule-icon payment">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect width="20" height="14" x="2" y="5" rx="2" />
+              <line x1="2" x2="22" y1="10" y2="10" />
+            </svg>
+          </div>
+          <h3 class="rule-title">Payment</h3>
+          <p class="rule-description">Rent must be paid on or before the due date each month</p>
+        </div>
+
+        <div class="rule-card">
+          <div class="rule-icon visitors">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+              <circle cx="9" cy="7" r="4" />
+              <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
+              <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+            </svg>
+          </div>
+          <h3 class="rule-title">Visitors</h3>
+          <p class="rule-description">Visitors allowed only with prior permission from the owner</p>
+        </div>
+
+        <div class="rule-card">
+          <div class="rule-icon overnight">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" />
+            </svg>
+          </div>
+          <h3 class="rule-title">Overnight Guests</h3>
+          <p class="rule-description">No overnight guests without explicit permission</p>
+        </div>
+
+        <div class="rule-card">
+          <div class="rule-icon prohibited">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10" />
+              <path d="m4.9 4.9 14.2 14.2" />
+            </svg>
+          </div>
+          <h3 class="rule-title">Prohibited Items</h3>
+          <p class="rule-description">Smoking, illegal drugs, and alcohol are strictly prohibited</p>
+        </div>
+
+        <div class="rule-card full-width">
+          <div class="rule-icon respect">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path
+                d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" />
+            </svg>
+          </div>
+          <h3 class="rule-title">Respect Others</h3>
+          <p class="rule-description">Respect fellow tenants and maintain a peaceful, harmonious environment</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Get in Touch</span>
+        <h2 class="section-title">Contact Us</h2>
+        <p class="section-description">Have questions? We'd love to hear from you</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="contact-card">
+            <h3 class="contact-card-title">Contact Information</h3>
+
+            <!-- phone number -->
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                </svg>
+              </div>
+              <div>
+                <p class="contact-label">Phone Numbers</p>
+                <p class="contact-value">0950 143 2549</p>
+                <p class="contact-value">0905 244 8466</p>
+                <p class="contact-value">0976 445 8747</p>
+              </div>
+            </div>
+
+            <!-- Facebook -->
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+                </svg>
+              </div>
+              <div>
+                <p class="contact-label">Facebook</p>
+                <p class="contact-value">
+                  <a href="https://www.facebook.com/anelyn.lorenzana" target="_blank" class="contact-link">
+                    JoshJess Lorenzana
+                  </a>
+                </p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+                </svg>
+              </div>
+              <div>
+                <p class="contact-label">Facebook</p>
+                <p class="contact-value">
+                  <a href="https://www.facebook.com/eluasky" target="_blank" class="contact-link">
+                    Joshua Lorenzana
+                  </a>
+                </p>
+              </div>
+            </div>
+
+            <!-- Address -->
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
+                  <circle cx="12" cy="10" r="3" />
+                </svg>
+              </div>
+              <div>
+                <p class="contact-label">Address</p>
+                <p class="contact-value">Purok 1, Salvacion,<br>Daraga, Albay</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="map-container">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3884.805254914271!2d123.68190299999996!3d13.174675599999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a1070d34a51831%3A0x315b6078344b502!2sJOSHUA%20LORENZANA%20HOUSE!5e0!3m2!1sen!2sph!4v1768563634883!5m2!1sen!2sph"
+              width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade" title="JOSHJESS Boarding House Location"></iframe>
+          </div>
+        </div>
+
+        <div class="contact-form-container">
+          <form id="contact-form" class="contact-form" action="https://formspree.io/f/mgoooewo" method="POST">
+
+
+            <h3 class="form-title">Send us a Message</h3>
+
+            <div class="form-group">
+              <label for="name" class="form-label">Name</label>
+              <input type="text" id="name" name="name" class="form-input" placeholder="Your full name" required>
+            </div>
+
+            <div class="form-group">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" id="email" name="email" class="form-input" placeholder="Your email address" required>
+            </div>
+
+
+            <div class="form-group">
+              <label for="phone" class="form-label">Phone Number</label>
+              <input type="tel" id="phone" name="phone" class="form-input" placeholder="Your phone number" required>
+            </div>
+
+            <div class="form-group">
+              <label for="message" class="form-label">Message</label>
+              <textarea id="message" name="message" class="form-textarea" placeholder="How can we help you?" rows="4"
+                required></textarea>
+            </div>
+
+            <input type="hidden" name="_subject" value="New Inquiry – JOSHJESS Boarding House">
+            <p id="form-success" class="form-success" style="display:none;">
+              ✅ Thank you! Your message has been sent successfully.
+            </p>
+
+            <button type="submit" class="btn-submit">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="m22 2-7 20-4-9-9-4Z" />
+                <path d="M22 2 11 13" />
+              </svg>
+              Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <h3 class="footer-logo">JOSHJESS Boarding House</h3>
+          <p class="footer-tagline">A safe and comfortable place to stay</p>
+        </div>
+        <div class="footer-links">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#rooms">Rooms</a>
+          <a href="#rules">Rules</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 JOSHJESS Boarding House. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
